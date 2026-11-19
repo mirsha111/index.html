@@ -1,0 +1,42 @@
+/* @media screen/all/print and (media-features:width/height/min-width/max-width/min-height/max-height){
+    selector{
+
+    }
+}  syntax */
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(205,225,242);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    background-color:rgb(205,225,242); 
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:480px){
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100px;
+        background-color: aquamarine;
+    }
+}
+
+@media screen and(max-width:760px){
+    .container{
+        flex-wrap: wrap;
+    }
+}

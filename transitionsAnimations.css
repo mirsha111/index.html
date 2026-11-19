@@ -1,0 +1,176 @@
+.box1{
+    width: 200px;
+    height: 150px;
+    background-color:rgb(17, 2, 45);
+    /* transition: background-color  ease-in 2s; */
+    transition: height 3s ease-in 2s;
+}
+
+.box1:hover{
+    background-color: rgb(156, 27, 38);
+    width: 300px;
+    height: 200px;
+
+}
+
+
+/* ---------ANIMATIONS--------- */
+
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    animation: move infinite 2s;
+}
+
+@keyframes move {
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: bisque;
+    }
+}
+/* 
+@keyframes move{
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: green;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: blue;
+    } 
+} */
+
+
+    /* -----------NOTES------------ */
+
+        /*
+        here move ennath oru name aan ,we can add any name then call it after @keyframes
+         transform: skew(45deg);  skew chyyan dgree value kodknm
+        transform: rotate(45deg); rotate akan dgree value kodkanm 
+         transform: scale(width,height);  width height adjust akan aaan scale()
+        transform:translate() */
+
+@keyframes move{
+    0%{
+        transform: translate(0px,0px) rotate(30deg);
+
+    }
+    25%{
+        transform: translate(300px,0px) rotate(45deg);
+    }
+    50%{
+        transform: translate(300px,300px) rotate(60deg);
+    }
+    75%{
+        transform: translate(0px,300px) rotate(75deg);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(90deg);
+    }
+}
+
+
+/* ----------BOUNCING BALL---------- */
+
+.box3{
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    background-color: cadetblue;
+    animation: ball 3s infinite;
+    animation-direction: alternate;
+}
+@keyframes ball{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* -----------TRAFFIC SIGNAL----------- */
+.traffic{
+    width: 250px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.red{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: grey;
+    animation: red 2s infinite;
+}
+
+
+.orange{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: grey;
+    animation: orange 2s infinite;
+}
+
+
+.green{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: grey;
+    animation: green 2s infinite;
+}
+
+
+@keyframes red{
+    0%,30%{
+        background-color: red;
+    }
+    30.1%,100%{
+        background-color: grey;
+    }
+    
+}
+
+@keyframes orange{
+    0%,33%{
+        background-color:grey;
+    }
+    34%,66%{
+        background-color: orange;
+    }
+    66.1%,100%{
+        background-color: grey;
+    }
+    
+}
+
+@keyframes green{
+    
+    0%,66%{
+        background-color: grey;
+    }
+    67%,100%{
+        background-color: green;
+    }
+    
+}

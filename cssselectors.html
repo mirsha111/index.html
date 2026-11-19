@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #div1{
+            border: 5px solid red;
+        }
+        #span1{
+            color: blueviolet;
+        }
+
+        /* .container p{
+            background-color: aqua;
+
+        }  example for descendant selector >>> it styles only properties which is inside the containers(div)*/
+
+        /*.container>p{
+            background-color: aquamarine;
+        }  example for child selector>>>>>>>>it styles only parent class's child classes(containernte ullil varunna p tagine mathram style cheyum incase section veranenkil athine style aakoola)
+         */
+
+        /* .container+p{
+            background-color: brown;
+        } example for adjacent sibling selector>>>> containernte aadthlla p tag*/
+        /* .container~p{
+            background-color: aqua;
+         /* }  adjcnt sblgnte aduthulla ella p tags*/
+
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            background-color: black;
+        }
+        /* link>> link nte colour 
+        visited>> aa link visited anenkil color green aka
+        hover>>link nte mukaliloode mouse pokumbol linknte clr yellow akka
+        active>> link click chyumbol linknte clr blck */
+
+         
+        img{
+            opacity: 1;
+        } 
+        img:hover{
+            opacity: 0.5;
+        }
+
+        p:first-line{
+            color: rgb(38, 77, 177);
+        }
+        p:first-letter{
+            color: black;
+        }
+        li:first-child{
+            color: bisque;
+        }
+        #para1::before{
+            content: "before";
+            color: brown;
+        }
+        #para1::after{
+            content: "***********";
+        }
+        ::selection{
+            background-color: beige;
+            color: black;
+        }
+
+        ::marker{
+            color: rgb(144 ,144,168);
+        }
+        *{
+            color: red;
+        }
+
+    </style>
+
+<!-- 
+    <h1>CSS SELECTOR</h1>
+    <ul>
+        <li>Element selector-tagname,id,class name</li>
+        <li>combinators
+            <ol>
+                <li>Descendant selector(space)</li>        
+                <li>child selector(>)</li>
+                <li>adjascent sibling selector(+)</li>
+                <li>general sibling selector(-)</li>
+            </ol>
+        </li>
+        <li>psuedo class</li> 
+        <li>psuedo element</li>
+
+    </ul> -->
+
+<!-- example for combinators -->
+    <div id="div1">
+        <h1>WHAT IS DIV</h1>
+        <P>Div is like a container used to style more properties inside the div at one call</P>
+        <p><span id="span1">span is used</span> to style the paragraph's specific part </p>
+    </div>
+<!-- 
+    <div class="container">
+        <p>paragraph1</p>
+        <section>
+            <p>paragraph2</p>
+        </section>
+        <p>paragraph3</p>
+    </div>
+
+    <p>paragraph4</p>
+    <p>paragraph5</p>
+
+    <div class="container">
+        <p>paragraph6</p>
+        <p>paragraph7</p>
+    </div> -->
+
+
+    <a href="https://www.w3schools.com/html/">HTML</a><br>
+    <img src="image2.jpg" alt="">
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptatibus sit cumque. Quasi vero, magni consequatur, nulla asperiores voluptates fugit doloribus, illo enim nemo minus illum expedita omnis quo ipsam!</p>
+</body>
+</html>
